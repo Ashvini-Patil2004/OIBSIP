@@ -1,52 +1,71 @@
-# 🎯 Number Guessing Game – Java
+# 🏧 ATM Interface – Java
 
-A simple and interactive **Number Guessing Game** developed using Java.
+A simple **ATM Interface application** developed using **Core Java** as part of the **OASIS INFOBYTE Java Development Internship – Task 2**.
 
-The computer randomly selects a number between **1 and 100**, and the player has a maximum of **7 attempts** to guess the correct number.
+This project simulates basic ATM operations such as user authentication, balance checking, depositing money, withdrawing money, and viewing transaction history.
 
-## 🚀 Features
+---
 
-- 🎲 Random number generation between 1 and 100
-- 🔢 Maximum 7 attempts per round
-- ⬆️ Displays "Too High" when the guess is greater than the secret number
-- ⬇️ Displays "Too Low" when the guess is smaller than the secret number
-- ✅ Displays "Correct!" when the number is guessed
-- 🔄 Option to play multiple rounds
-- 📊 Displays the number of attempts used
-- 💻 Simple console-based interface
+## 📌 Project Overview
+
+The ATM Interface allows a user to securely log in using a **User ID and PIN** and perform different banking operations through a console-based menu.
+
+The project demonstrates the use of:
+
+- Object-Oriented Programming (OOP)
+- Classes and Objects
+- Encapsulation
+- ArrayList
+- Methods
+- Conditional Statements
+- Loops
+- Switch-Case
+- User Input using Scanner
+
+---
+
+## ✨ Features
+
+### 🔐 User Authentication
+- Login using User ID and PIN
+- Invalid credentials are rejected
+
+### 💰 Check Balance
+- Displays the current account balance
+
+### 💵 Deposit Money
+- Allows the user to deposit money
+- Updates the account balance automatically
+
+### 💸 Withdraw Money
+- Allows the user to withdraw money
+- Prevents withdrawal when the balance is insufficient
+
+### 📜 Transaction History
+- Displays all successful deposits and withdrawals
+- Shows transaction type, amount, and details
+
+### 🚪 Exit
+- Safely exits the ATM application
+
+---
 
 ## 🛠️ Technologies Used
 
 - **Java**
 - **IntelliJ IDEA**
-- **Git & GitHub**
+- **Java Collections – ArrayList**
+- **Scanner for User Input**
 
-## 🎮 How to Play
+---
 
-1. Run the Java program.
-2. The computer selects a random number between 1 and 100.
-3. Enter your guess.
-4. Follow the hints:
-   - **Too Low** → Guess a higher number.
-   - **Too High** → Guess a lower number.
-5. Try to find the correct number within 7 attempts.
-6. After completing a round, choose whether to play again.
-
-## 📌 Example
+## 📂 Project Structure
 
 ```text
-I have selected a number between 1 and 100.
-You have 7 attempts.
-
-Enter your guess: 60
-Too Low!
-Attempts remaining: 6
-
-Enter your guess: 90
-Too High!
-Attempts remaining: 5
-
-Enter your guess: 83
-Correct!
-
-You guessed the number in 7 attempts.
+Task-2-ATM-Interface
+│
+├── Account.java
+├── Transaction.java
+├── Bank.java
+├── Main.java
+└── README.md
